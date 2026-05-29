@@ -12,6 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: |
+          pip install git+https://github.com/Anaminus/rbxfile.git --break-system-packages
+          pip install requests --break-system-packages
+    
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
