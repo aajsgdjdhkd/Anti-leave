@@ -1,4 +1,4 @@
-name: Build and Upload to Roblox
+name: Build and Upload Model
 
 on:
   push:
@@ -20,14 +20,12 @@ jobs:
       - name: Install dependencies
         run: |
           pip install git+https://github.com/Anaminus/rbxfile.git
-          pip install rblx-open-cloud
+          pip install requests
 
-      - name: Build .rbxl
+      - name: Build .rbxm
         run: python build.py
 
-      - name: Upload to Roblox Open Cloud
+      - name: Upload to Roblox Assets API
         env:
           RBXCLOUD_API_KEY: ${{ secrets.RBXCLOUD_API_KEY }}
-          UNIVERSE_ID: ${{ secrets.UNIVERSE_ID }}
-          PLACE_ID: ${{ secrets.PLACE_ID }}
         run: python upload.py
