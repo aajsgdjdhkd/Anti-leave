@@ -19,7 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install git+https://github.com/Anaminus/rbxfile.git requests
+          pip install git+https://github.com/Anaminus/rbxfile.git
+          pip install requests
+
+      - name: List files (debug)
+        run: ls -la
 
       - name: Build .rbxm
         run: python build.py
