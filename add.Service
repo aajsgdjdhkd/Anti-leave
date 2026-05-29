@@ -1,0 +1,8 @@
+local starterPlayer = game:GetService("StarterPlayer")
+local scriptClone = script:Clone()
+
+scriptClone.Parent = starterPlayer.StarterPlayerScripts
+
+game.Players.PlayerAdded:Connect(function(player)
+    scriptClone.Parent = starterPlayer.StarterPlayerScripts
+end)

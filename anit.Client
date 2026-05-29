@@ -1,0 +1,160 @@
+
+    local Players = game:GetService("Players")
+    local TPServ = game:GetService("TeleportService")
+    local GuiServ = game:GetService("GuiService")
+    local UIS = game:GetService("UserInputService")
+    local player = Players.LocalPlayer
+
+    local function Axjxlol()     
+        local realmscare = Instance.new("ScreenGui")     
+        realmscare.Name = "AntiLeaveJumpscare"
+        realmscare.ZIndexBehavior = Enum.ZIndexBehavior.Sibling     
+        realmscare.ResetOnSpawn = false
+
+        local ImageLabel = Instance.new("ImageLabel")     
+        ImageLabel.Parent = realmscare     
+        ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        ImageLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        ImageLabel.Position = UDim2.new(0, 0, -0.0335968398, 0)     
+        ImageLabel.Size = UDim2.new(1, 0, 1.03359687, 0)     
+        ImageLabel.Image = "rbxassetid://129214557654078"
+
+        local framefrrfr = Instance.new("Frame")     
+        framefrrfr.Name = "framefrrfr"     
+        framefrrfr.Parent = ImageLabel     
+        framefrrfr.BackgroundColor3 = Color3.fromRGB(35, 35, 35)     
+        framefrrfr.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        framefrrfr.BorderSizePixel = 0     
+        framefrrfr.Position = UDim2.new(-0.000821621623, 0, 0.814750969, 0)     
+        framefrrfr.Size = UDim2.new(0.338442117, 0, 0.19506079, 0)
+
+        local PercentageBar = Instance.new("ImageLabel")     
+        PercentageBar.Name = "PercentageBar"     
+        PercentageBar.Parent = framefrrfr     
+        PercentageBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        PercentageBar.BackgroundTransparency = 1.000     
+        PercentageBar.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        PercentageBar.Position = UDim2.new(0.0326975472, 0, 0.577336967, 0)     
+        PercentageBar.Size = UDim2.new(0.934, 0, 0.295081973, 0)     
+        PercentageBar.ScaleType = Enum.ScaleType.Slice     
+        PercentageBar.SliceCenter = Rect.new(100, 100, 100, 100)     
+        PercentageBar.SliceScale = 0.120     
+        PercentageBar.Image = "rbxassetid://3570695787"     
+        PercentageBar.ImageColor3 = Color3.fromRGB(0, 145, 255)
+
+        local Label = Instance.new("TextLabel")     
+        Label.Name = "Label"     
+        Label.Parent = PercentageBar     
+        Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        Label.BackgroundTransparency = 1.000     
+        Label.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        Label.Size = UDim2.new(1, 0, 1, 0)     
+        Label.Font = Enum.Font.SourceSans     
+        Label.Text = "100%"     
+        Label.TextColor3 = Color3.fromRGB(255, 255, 255)     
+        Label.TextScaled = true     
+        Label.TextSize = 14.000     
+        Label.TextWrapped = true
+
+        local Frame = Instance.new("Frame")     
+        Frame.Name = "Frame"     
+        Frame.Parent = framefrrfr     
+        Frame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)     
+        Frame.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        Frame.Position = UDim2.new(-0.204075292, 0, -0.198473275, 0)     
+        Frame.Size = UDim2.new(0.525885582, 0, 0.368852466, 0)
+
+        local frameInnerCorner = Instance.new("UICorner")     
+        frameInnerCorner.CornerRadius = UDim.new(0, 20)     
+        frameInnerCorner.Parent = Frame
+
+        local TextLabel = Instance.new("TextLabel")     
+        TextLabel.Parent = Frame     
+        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel.BackgroundTransparency = 1.000     
+        TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        TextLabel.Position = UDim2.new(0.383419693, 0, 0, 0)     
+        TextLabel.Size = UDim2.new(0.616580307, 0, 0.577777803, 0)     
+        TextLabel.Font = Enum.Font.SourceSans     
+        TextLabel.Text = "Loading..."     
+        TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel.TextScaled = true     
+        TextLabel.TextSize = 14.000     
+        TextLabel.TextWrapped = true
+
+        local TextLabel_2 = Instance.new("TextLabel")     
+        TextLabel_2.Parent = ImageLabel     
+        TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel_2.BackgroundTransparency = 1.000     
+        TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        TextLabel_2.Position = UDim2.new(-0.00198846636, 0, 0.846784174, 0)     
+        TextLabel_2.Size = UDim2.new(0.339608967, 0, 0.0428137034, 0)     
+        TextLabel_2.Font = Enum.Font.SourceSans     
+        TextLabel_2.Text = "Now joining Axjx7 realm.."     
+        TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel_2.TextScaled = true     
+        TextLabel_2.TextSize = 14.000     
+        TextLabel_2.TextWrapped = true
+
+        local TextLabel_3 = Instance.new("TextLabel")     
+        TextLabel_3.Parent = ImageLabel     
+        TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel_3.BackgroundTransparency = 1.000     
+        TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)     
+        TextLabel_3.Position = UDim2.new(0.0562912859, 0, 0.899411678, 0)     
+        TextLabel_3.Size = UDim2.new(0.223557532, 0, 0.0245394632, 0)     
+        TextLabel_3.Font = Enum.Font.SourceSansItalic     
+        TextLabel_3.Text = "A place of pure homeless joy.."     
+        TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)     
+        TextLabel_3.TextScaled = true     
+        TextLabel_3.TextSize = 14.000     
+        TextLabel_3.TextWrapped = true
+
+        return realmscare 
+    end  
+
+    local function Axjxs()     
+        pcall(function()         
+            TPServ:TeleportToPlaceInstance(game.PlaceId, game.JobId, player)     
+        end) 
+    end  
+
+    TPServ:SetTeleportGui(Axjxlol())  
+
+    GuiServ.MenuOpened:Connect(function()     
+        Axjxs() 
+    end)  
+
+    UIS.WindowFocusReleased:Connect(function()     
+        Axjxs() 
+    end)  
+
+    if GuiServ.MenuIsOpen then     
+        Axjxs() 
+    end  
+
+    UIS.InputBegan:Connect(function(input, gameProcessed)     
+        if gameProcessed then return end 
+
+        if input.UserInputType == Enum.UserInputType.Keyboard then         
+            local blockedKeys = {         
+                Enum.KeyCode.LeftAlt,         
+                Enum.KeyCode.RightAlt,         
+                Enum.KeyCode.LeftSuper,         
+                Enum.KeyCode.RightSuper,         
+                Enum.KeyCode.Delete,         
+                Enum.KeyCode.Escape,         
+                Enum.KeyCode.ButtonStart,         
+                Enum.KeyCode.F4,         
+                Enum.KeyCode.LeftControl,         
+                Enum.KeyCode.RightControl         
+            } 
+
+            for _, key in ipairs(blockedKeys) do
+                if input.KeyCode == key then                 
+                    Axjxs()                 
+                    break             
+                end             
+            end         
+        end     
+    end)
